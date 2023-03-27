@@ -72,15 +72,14 @@ mc_predictions = np.array([
             ]
         ], dtype = np.float64)
 
-hard_labels = np.argmax(
-                np.mean(
-                    self.sampled_outputs_custom_shape,
-                    axis = 0,
-                    keepdims = True),
-                    axis = 0,
-                keepdims = True)
+preds_hard_labels = np.argmax(np.mean(
+                                        self.sampled_outputs_custom_shape,
+                                        axis = 0,
+                                        keepdims = True),
+                                        axis = 0,
+                                        keepdims = True)
 
-lables =  = np.array([
+target =  = np.array([
             [# Class 1
                 [1,1,0,1],
                 [1,0,0,1],
@@ -101,8 +100,8 @@ lables =  = np.array([
              ]
             ])
 
-pavpuscore, a_given_c, u_given_i = pavpu(prediction = hard_labels,
-                                        target = labels,
+pavpuscore, a_given_c, u_given_i = pavpu(prediction = preds_hard_labels,
+                                        target = target,
                                         uncertainty_threshold = 0.3,
                                         base_metric_threshold = 0.1,
                                         base_metric = "accuracy")
