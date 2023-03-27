@@ -8,6 +8,9 @@ The metric is implemented in NumPy with a foucs on optimizing w.r.t. speed.
 - Weighting scheme to account for class imbalance (not in the original paper).
 
 # Installation
+1) Clone this repository.
+2) Set working directory to where the repository has been copied to (pavpu/)
+3) Install
 ```
 cd pavpu
 python setup.py install
