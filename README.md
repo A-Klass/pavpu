@@ -2,7 +2,7 @@
 This repository contains the implementation of the Patch Accuracy vs. Patch Uncertainty (PAvPU) metric from the paper: https://arxiv.org/pdf/1811.12709.pdf.
 The metric is implemented in NumPy with a foucs on optimizing w.r.t. speed.
 
-# Extensions:
+# Novel Extensions
 - Padding (not in the original paper)
 - Alternative metrics such as F1, Recall (not in the original paper) to replace Accuracy.
 - Weighting scheme to account for class imbalance (not in the original paper).
