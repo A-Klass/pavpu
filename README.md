@@ -110,4 +110,9 @@ pavpuscore, a_given_c, u_given_i = pavpu(prediction = preds_hard_labels,
                                         base_metric = "accuracy")
 ```
 # Dependencies
-tbd
+- Python >=3.9
+- NumPy >= 1.24.2
+- scikit-image >= 0.20.0
+- scikit-learn >= 1.2.2
+
+Most notably, skimage.util.view_as_windows is a very helpful function used to reshape images to blocks (patches).
