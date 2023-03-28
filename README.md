@@ -1,6 +1,6 @@
 # PAvPU  (Patch Accuracy vs. Patch Uncertainty) Implementation
 This repository contains the implementation of the Patch Accuracy vs. Patch Uncertainty (PAvPU) metric from the paper: https://arxiv.org/pdf/1811.12709.pdf.
-PAvPU evaluates the for Bayesian models in semantic segmentation by comparing the accuracy of the model's predictions to the uncertainty of the predictions.
+PAvPU evaluates the performance for Bayesian models in semantic segmentation by comparing the accuracy of the model's predictions to the uncertainty of the predictions.
 The metric is implemented in NumPy with a foucs on optimizing w.r.t. speed.
 
 # Novel Extensions
